@@ -1,15 +1,16 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <h1>Tool chest</h1>
+    <p>Here is a stack of tools taht I use to help me keep track of the animals around the farm</p>
   </div>
 </template>
 
 <style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
+.about {
+  min-height: 100vh;
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
 }
 </style>
