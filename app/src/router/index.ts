@@ -18,6 +18,11 @@ const router = createRouter({
       component: () => import('../views/AboutView.vue'),
     },
     {
+      path: '/live-stock',
+      name: 'live-stock',
+      component: () => import('../views/LiveStockViews.vue'),
+    },
+    {
       path: '/breeding-season',
       name: 'breeding-season',
       component: () => import('../views/BreedingSeasonView.vue'),
