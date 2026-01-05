@@ -1,45 +1,18 @@
-# app
+# App
 
-This template should help get you started developing with Vue 3 in Vite.
+To start your Phoenix server:
 
-## Recommended IDE Setup
+* Run `mix setup` to install and setup dependencies
+* Start Phoenix endpoint with `mix phx.server` or inside IEx with `iex -S mix phx.server`
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
-## Type Support for `.vue` Imports in TS
+Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+## Learn more
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Run Unit Tests with [Vitest](https://vitest.dev/)
-
-```sh
-npm run test:unit
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+* Official website: https://www.phoenixframework.org/
+* Guides: https://hexdocs.pm/phoenix/overview.html
+* Docs: https://hexdocs.pm/phoenix
+* Forum: https://elixirforum.com/c/phoenix-forum
+* Source: https://github.com/phoenixframework/phoenix
