@@ -1,0 +1,23 @@
+<Layouts.app flash={@flash}>
+  <.header>
+    Birth {@birth.id}
+    <:subtitle>This is a birth record from your database.</:subtitle>
+    <:actions>
+      <.button navigate={~p"/births"}>
+        <.icon name="hero-arrow-left" />
+      </.button>
+      <.button variant="primary" navigate={~p"/births/#{@birth}/edit?return_to=show"}>
+        <.icon name="hero-pencil-square" /> Edit birth
+      </.button>
+    </:actions>
+  </.header>
+
+  <.list>
+    <:item title="Tagid">{@birth.tagId}</:item>
+    <:item title="Delivery date">{@birth.delivery_date}</:item>
+    <:item title="Time of day">{@birth.time_of_day}</:item>
+    <:item title="Male lambs">{@birth.male_lambs}</:item>
+    <:item title="Female lambs">{@birth.female_lambs}</:item>
+    <:item title="Notes">{@birth.notes}</:item>
+  </.list>
+</Layouts.app>

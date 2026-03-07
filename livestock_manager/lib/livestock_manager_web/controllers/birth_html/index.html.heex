@@ -1,0 +1,30 @@
+<Layouts.app flash={@flash}>
+  <.header>
+    Listing Births
+    <:actions>
+      <.button href={~p"/births/new"}>
+        <.icon name="hero-plus" /> New Birth
+      </.button>
+    </:actions>
+  </.header>
+
+  <.table id="births" rows={@births} row_click={&JS.navigate(~p"/births/#{&1}")}>
+    <:col :let={birth} label="Tagid">{birth.tagId}</:col>
+    <:col :let={birth} label="Delivery date">{birth.delivery_date}</:col>
+    <:col :let={birth} label="Time of day">{birth.time_of_day}</:col>
+    <:col :let={birth} label="Male lambs">{birth.male_lambs}</:col>
+    <:col :let={birth} label="Female lambs">{birth.female_lambs}</:col>
+    <:col :let={birth} label="Notes">{birth.notes}</:col>
+    <:action :let={birth}>
+      <div class="sr-only">
+        <.link navigate={~p"/births/#{birth}"}>Show</.link>
+      </div>
+      <.link navigate={~p"/births/#{birth}/edit"}>Edit</.link>
+    </:action>
+    <:action :let={birth}>
+      <.link href={~p"/births/#{birth}"} method="delete" data-confirm="Are you sure?">
+        Delete
+      </.link>
+    </:action>
+  </.table>
+</Layouts.app>

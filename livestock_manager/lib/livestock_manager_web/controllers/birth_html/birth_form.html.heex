@@ -1,0 +1,12 @@
+<.form :let={f} for={@changeset} action={@action}>
+  <.input field={f[:tagId]} type="text" label="Tagid" />
+  <.input field={f[:delivery_date]} type="date" label="Delivery date" />
+  <.input field={f[:time_of_day]} type="text" label="Time of day" />
+  <.input field={f[:male_lambs]} type="number" label="Male lambs" />
+  <.input field={f[:female_lambs]} type="number" label="Female lambs" />
+  <.input field={f[:notes]} type="text" label="Notes" />
+  <footer>
+    <.button variant="primary">Save Birth</.button>
+    <.button :if={@return_to} href={@return_to}>Cancel</.button>
+  </footer>
+</.form>
