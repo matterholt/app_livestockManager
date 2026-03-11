@@ -12,5 +12,7 @@ defmodule LivestockManager.Repo.Migrations.CreateBirths do
 
       timestamps(type: :utc_datetime)
     end
+
+    create constraint(:births, :time_of_day, check: "time_of_day IN ('AM', 'PM')")
   end
 end

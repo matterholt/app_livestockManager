@@ -18,6 +18,8 @@ defmodule LivestockManagerWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :home
+
+    resources "/births", BirthController
   end
 
   # Other scopes may use custom stacks.

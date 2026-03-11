@@ -2,10 +2,11 @@ import Config
 
 # Configure your database
 config :livestock_manager, LivestockManager.Repo,
-  username: "postgres",
-  password: "postgres",
+  username: "test_user",
+  password: "test_pass",
   hostname: "localhost",
-  database: "livestock_manager_dev",
+  database: "default_db",
+  port: "5433",
   stacktrace: true,
   show_sensitive_data_on_connection_error: true,
   pool_size: 10
